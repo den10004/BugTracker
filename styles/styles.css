@@ -1,7 +1,7 @@
 @import "./header.css";
 @import "./main.css";
 @import "./bugList.css";
-@import "./menu.css";
+@import "./bug.css";
 @import "./buttons.css";
 @import "./normalize.css";
 @import "../vendor/fonts.css";
@@ -58,4 +58,39 @@ li {
 
 .colorGray {
   color: #676767;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

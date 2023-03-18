@@ -1,7 +1,12 @@
 const copyClick = document.querySelector(".copyClick");
 const copied = document.querySelector(".copied");
-let tabNavs = document.querySelectorAll(".nav-tab");
-let tabPanes = document.querySelectorAll(".tab-pane");
+const tabNavs = document.querySelectorAll(".nav-tab");
+const tabPanes = document.querySelectorAll(".tab-pane");
+const bugBth = document.querySelector(".bugBth");
+
+const modal = document.getElementById("myModal");
+const btn = document.querySelector(".myBtn");
+const span = document.querySelector(".close");
 
 function openSnack() {
   if (copied.style.display == "none") {
@@ -14,7 +19,19 @@ function openSnack() {
   }
 }
 
-copyClick.addEventListener("click", openSnack);
+function openModal() {
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+function closeWindow(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 for (let i = 0; i < tabNavs.length; i++) {
   tabNavs[i].addEventListener("click", function (e) {
@@ -34,3 +51,8 @@ for (let i = 0; i < tabNavs.length; i++) {
     }
   });
 }
+
+copyClick.addEventListener("click", openSnack);
+btn.addEventListener("click", openModal);
+span.addEventListener("click", closeModal);
+window.addEventListener("click", closeWindow);

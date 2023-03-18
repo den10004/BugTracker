@@ -1,4 +1,4 @@
-.menu__block {
+.bug__block {
   display: grid;
   grid-template-columns: 90px 290px 200px 165px 100px;
   grid-gap: 20px;
@@ -19,6 +19,6 @@
   margin-top: 50px;
 }
 
-.menu__list {
+.bug__list {
   border-bottom: 1px solid #ebebeb;
 }
