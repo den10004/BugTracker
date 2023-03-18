@@ -88,6 +88,13 @@
   position: relative;
 }
 
+@media screen and (max-width: 778px) {
+  .modal__form {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
 .modal__form > input {
   border: none;
   width: 350px;
@@ -148,6 +155,12 @@
   position: relative;
   margin-bottom: 10px;
   position: relative;
+}
+
+@media screen and (max-width: 357px) {
+  .modal__formMessage {
+    width: 100%;
+  }
 }
 
 .modal__formMessage > input {

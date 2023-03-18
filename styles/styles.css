@@ -39,16 +39,19 @@ li {
 .montserrat-font14 {
   font-family: "Roboto", sans-serif, "Montserrat";
   font-size: 14px;
+  line-height: 20px;
 }
 
 .montserrat-font16 {
   font-family: "Roboto", sans-serif, "Montserrat";
   font-size: 16px;
+  line-height: 20px;
 }
 
 .montserrat-font24 {
   font-family: "Roboto", sans-serif, "Montserrat";
   font-size: 24px;
+  line-height: 20px;
 }
 
 .font-weight400 {
