@@ -62,14 +62,6 @@
   }
 }
 
-/*
-@media screen and (max-width: 500px) {
-  .header__selects {
-    flex-direction: column;
-  }
-}
-*/
-
 .header__search {
   border: none;
   background: rgba(246, 246, 246, 0.4);
@@ -93,13 +85,7 @@
   width: 200px;
   height: 40px;
 }
-/*
-@media screen and (max-width: 500px) {
-  .select__container {
-    margin-bottom: 10px;
-  }
-}
-*/
+
 .select {
   position: relative;
 }

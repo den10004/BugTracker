@@ -4,8 +4,8 @@ const tabNavs = document.querySelectorAll(".nav-tab");
 const tabPanes = document.querySelectorAll(".tab-pane");
 const bugBth = document.querySelector(".bugBth");
 
-const modal = document.getElementById("myModal");
-const btn = document.querySelector(".myBtn");
+const modal = document.getElementById("modal");
+const btn = document.querySelector(".bugBtn");
 const span = document.querySelector(".close");
 
 function openSnack() {

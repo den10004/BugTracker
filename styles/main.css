@@ -46,6 +46,7 @@
 
 .tab-content {
   width: 100%;
+  overflow-x: scroll;
 }
 
 @media screen and (max-width: 950px) {
