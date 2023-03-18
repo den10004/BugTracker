@@ -1,0 +1,61 @@
+@import "./header.css";
+@import "./main.css";
+@import "./bugList.css";
+@import "./menu.css";
+@import "./buttons.css";
+@import "./normalize.css";
+@import "../vendor/fonts.css";
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1920px;
+  background: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.wrapper {
+  max-width: 977px;
+  padding: 0 20px 0 20px;
+  margin: 80px auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+.montserrat-font16 {
+  font-family: "Roboto", sans-serif, "Montserrat";
+  font-size: 16px;
+}
+
+.font-weight400 {
+  font-weight: 400;
+}
+
+.font-weight500 {
+  font-weight: 500;
+}
+
+.font-weight600 {
+  font-weight: 600;
+}
+
+.colorBlock {
+  color: #232323;
+}
+
+.colorGray {
+  color: #676767;
+}

@@ -1,0 +1,29 @@
+.button-progress {
+  background: #ffd600;
+}
+
+.button-rejected {
+  background: #ed4848;
+}
+
+.button-solved {
+  background: #32a143;
+}
+
+.button-new {
+  background: transparent;
+  border: 1px solid #32a143;
+  color: #232323;
+}
+
+.button-review {
+  background: transparent;
+  border: 1px solid #ffd600;
+  color: #232323;
+}
+
+.button-list {
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+}

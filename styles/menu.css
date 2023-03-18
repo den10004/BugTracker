@@ -1,0 +1,24 @@
+.menu__block {
+  display: grid;
+  grid-template-columns: 90px 290px 200px 165px 100px;
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.styleHeight {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.menu__wrap {
+  margin-top: 50px;
+}
+
+.menu__list {
+  border-bottom: 1px solid #ebebeb;
+}

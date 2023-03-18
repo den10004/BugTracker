@@ -1,0 +1,31 @@
+.bugList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 43px;
+  height: 40px;
+  align-items: center;
+}
+
+.tick {
+  margin-left: 10px;
+}
+
+.button-bugs {
+  width: 242px;
+  height: 40px;
+  border-radius: 16px;
+  background: #ffd600;
+  color: black;
+}
+
+.button-bugs:hover {
+  box-shadow: 0px 6px 30px rgba(255, 214, 0, 0.52);
+  backdrop-filter: blur(15px);
+  color: white;
+}
+
+.x {
+  background-color: red;
+  width: 200px;
+}
