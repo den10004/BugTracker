@@ -3,6 +3,7 @@
 @import "./bugList.css";
 @import "./bug.css";
 @import "./buttons.css";
+@import "./modal.css";
 @import "./normalize.css";
 @import "../vendor/fonts.css";
 
@@ -35,9 +36,19 @@ li {
   list-style-type: none;
 }
 
+.montserrat-font14 {
+  font-family: "Roboto", sans-serif, "Montserrat";
+  font-size: 14px;
+}
+
 .montserrat-font16 {
   font-family: "Roboto", sans-serif, "Montserrat";
   font-size: 16px;
+}
+
+.montserrat-font24 {
+  font-family: "Roboto", sans-serif, "Montserrat";
+  font-size: 24px;
 }
 
 .font-weight400 {
@@ -60,37 +71,6 @@ li {
   color: #676767;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(15px);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  width: 80%;
-}
-
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+input {
+  outline: none;
 }

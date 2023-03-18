@@ -27,3 +27,15 @@
   height: 30px;
   border-radius: 10px;
 }
+
+.button__redmine {
+  width: 242px;
+  height: 40px;
+  border-radius: 16px;
+}
+
+.button__form {
+  width: 147px;
+  height: 40px;
+  border-radius: 10px;
+}
