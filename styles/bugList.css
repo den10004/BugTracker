@@ -25,7 +25,18 @@
   color: white;
 }
 
-.x {
-  background-color: red;
-  width: 200px;
+.nav-tabs {
+  display: flex;
+}
+
+.nav-tab.active {
+  cursor: default;
+}
+
+.tab-pane {
+  display: none;
+  flex-direction: column;
+}
+.tab-pane.active {
+  display: flex;
 }

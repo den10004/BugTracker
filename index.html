@@ -91,10 +91,14 @@
 
     <section class="wrapper">
       <section class="main">
-        <ul class="main__header montserrat-font16">
-          <li class="font-weight600 colorBlock">BUGS</li>
-          <li class="font-weight400 colorGray">SUGGESTIONS</li>
-          <li class="font-weight600 colorBlock">
+        <ul class="main__header montserrat-font16 nav-tabs">
+          <li data-tab="1" class="font-weight600 colorBlock nav-tab active">
+            BUGS
+          </li>
+          <li data-tab="2" class="font-weight400 colorGray nav-tab">
+            SUGGESTIONS
+          </li>
+          <li data-tab="3" class="font-weight600 colorBlock nav-tab">
             <img class="bug" src="./images/bug.png" />&nbsp; BUG TRACKER
           </li>
           <li>
@@ -126,192 +130,206 @@
         </ul>
       </section>
 
-      <section class="bugList montserrat-font16">
-        <span class="font-weight500 colorBlock">BUG LIST</span>
-        <button class="button-bugs font-weight500 colorBlock">
-          + NEW BUGS
-        </button>
-      </section>
-
-      <section>
-        <ul class="menu__block mt30 montserrat-font16 font-weight400 colorGray">
-          <li>
-            #<button class="tick"><img src="./images/Polygon.png" /></button>
-          </li>
-          <li>
-            BUG<button class="tick"><img src="./images/Polygon.png" /></button>
-          </li>
-          <li>
-            App<button class="tick"><img src="./images/Polygon.png" /></button>
-          </li>
-          <li>
-            Status<button class="tick">
-              <img src="./images/Polygon.png" />
+      <section class="tab-content">
+        <div data-tab-content="1" class="tab-pane active">
+          <div class="bugList montserrat-font16">
+            <span class="font-weight500 colorBlock">BUG LIST</span>
+            <button class="button-bugs font-weight500 colorBlock">
+              + NEW BUGS
             </button>
-          </li>
-          <li>
-            Created<button class="tick">
-              <img src="./images/Polygon.png" />
-            </button>
-          </li>
-        </ul>
-
-        <div class="menu__wrap">
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16 colorBlock">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
-              <li>
-                <button class="button-new button-list font-weight400">
-                  New
-                </button>
-              </li>
-              <li class="colorGray">01/29/2022</li>
-            </ul>
           </div>
 
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
+          <section>
+            <ul
+              class="menu__block mt30 montserrat-font16 font-weight400 colorGray"
+            >
               <li>
-                <button class="button-review button-list font-weight400">
-                  On review
+                #<button class="tick">
+                  <img src="./images/Polygon.png" />
                 </button>
               </li>
-              <li class="colorGray">01/29/2022</li>
-            </ul>
-          </div>
-
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
               <li>
-                <button class="button-progress button-list font-weight400">
-                  In progress
+                BUG<button class="tick">
+                  <img src="./images/Polygon.png" />
                 </button>
               </li>
-              <li class="colorGray">01/29/2022</li>
-            </ul>
-          </div>
-
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
               <li>
-                <button class="button-progress button-list font-weight400">
-                  In progress
+                App<button class="tick">
+                  <img src="./images/Polygon.png" />
                 </button>
               </li>
-              <li class="colorGray">01/29/2022</li>
-            </ul>
-          </div>
-
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
               <li>
-                <button class="button-progress button-list font-weight400">
-                  In progress
+                Status<button class="tick">
+                  <img src="./images/Polygon.png" />
                 </button>
               </li>
-              <li class="colorGray">01/29/2022</li>
-            </ul>
-          </div>
-
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
               <li>
-                <button class="button-progress button-list font-weight400">
-                  In progress
+                Created<button class="tick">
+                  <img src="./images/Polygon.png" />
                 </button>
               </li>
-              <li class="colorGray">01/29/2022</li>
             </ul>
-          </div>
 
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
-              <li>
-                <button class="button-rejected button-list font-weight400">
-                  Rejected
-                </button>
-              </li>
-              <li class="colorGray">01/29/2022</li>
-            </ul>
-          </div>
+            <div class="menu__wrap">
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16 colorBlock">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-new button-list font-weight400">
+                      New
+                    </button>
+                  </li>
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
 
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
-              <li>
-                <button class="button-rejected button-list font-weight400">
-                  Rejected
-                </button>
-              </li>
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-review button-list font-weight400">
+                      On review
+                    </button>
+                  </li>
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
 
-              <li class="colorGray">01/29/2022</li>
-            </ul>
-          </div>
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-progress button-list font-weight400">
+                      In progress
+                    </button>
+                  </li>
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
 
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
-              <li>
-                <button class="button-rejected button-list font-weight400">
-                  Rejected
-                </button>
-              </li>
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-progress button-list font-weight400">
+                      In progress
+                    </button>
+                  </li>
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
 
-              <li class="colorGray">01/29/2022</li>
-            </ul>
-          </div>
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-progress button-list font-weight400">
+                      In progress
+                    </button>
+                  </li>
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
 
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
-              <li>
-                <button class="button-solved button-list font-weight400">
-                  Solved
-                </button>
-              </li>
-              <li class="colorGray">01/29/2022</li>
-            </ul>
-          </div>
-          <div class="menu__list styleHeight">
-            <ul class="menu__block montserrat-font16">
-              <li class="font-weight400">#567</li>
-              <li class="font-weight500">Button not working</li>
-              <li class="font-weight400">DeNet Pass</li>
-              <li>
-                <button class="button-solved button-list font-weight400">
-                  Solved
-                </button>
-              </li>
-              <li class="colorGray">01/29/2022</li>
-            </ul>
-          </div>
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-progress button-list font-weight400">
+                      In progress
+                    </button>
+                  </li>
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
+
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-rejected button-list font-weight400">
+                      Rejected
+                    </button>
+                  </li>
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
+
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-rejected button-list font-weight400">
+                      Rejected
+                    </button>
+                  </li>
+
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
+
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-rejected button-list font-weight400">
+                      Rejected
+                    </button>
+                  </li>
+
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
+
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-solved button-list font-weight400">
+                      Solved
+                    </button>
+                  </li>
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
+              <div class="menu__list styleHeight">
+                <ul class="menu__block montserrat-font16">
+                  <li class="font-weight400">#567</li>
+                  <li class="font-weight500">Button not working</li>
+                  <li class="font-weight400">DeNet Pass</li>
+                  <li>
+                    <button class="button-solved button-list font-weight400">
+                      Solved
+                    </button>
+                  </li>
+                  <li class="colorGray">01/29/2022</li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
+        <div data-tab-content="2" class="tab-pane">SUGGESTIONS</div>
+        <div data-tab-content="3" class="tab-pane">Tab content 3</div>
       </section>
     </section>
   </body>
