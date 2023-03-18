@@ -90,23 +90,26 @@
     </header>
 
     <section class="wrapper">
-      <section class="main">
-        <ul class="main__header montserrat-font16 nav-tabs">
-          <li data-tab="1" class="font-weight600 colorBlock nav-tab active">
-            BUGS
+      <section class="tabs">
+        <ul class="montserrat-font16 nav-tabs">
+          <li class="colorBlock">
+            <div data-tab="1" class="nav-tab active">BUGS</div>
           </li>
-          <li data-tab="2" class="font-weight400 colorGray nav-tab">
-            SUGGESTIONS
+          <li class="colorBlock">
+            <div data-tab="2" class="nav-tab">SUGGESTIONS</div>
           </li>
-          <li data-tab="3" class="font-weight600 colorBlock nav-tab">
-            <img class="bug" src="./images/bug.png" />&nbsp; BUG TRACKER
+          <li class="colorBlock">
+            <a class="bugLink font-weight600"
+              ><img class="bug" src="./images/bug.png" />&nbsp; BUG TRACKER</a
+            >
           </li>
+        </ul>
+        <ul class="addButtons">
           <li>
             <div class="img-list">
               <img class="img-list-question" src="./images/_.png" alt="?" />
             </div>
           </li>
-
           <li>
             <div class="cod">
               <div class="toCopyText font-weight500 colorBlock">
@@ -328,8 +331,35 @@
             </div>
           </section>
         </div>
-        <div data-tab-content="2" class="tab-pane">SUGGESTIONS</div>
-        <div data-tab-content="3" class="tab-pane">Tab content 3</div>
+        <div data-tab-content="2" class="tab-pane">
+          <div class="menu__list styleHeight">
+            <ul class="menu__block montserrat-font16 colorBlock">
+              <li class="font-weight400">#567</li>
+              <li class="font-weight500">Button not working</li>
+              <li class="font-weight400">DeNet Pass</li>
+              <li>
+                <button class="button-new button-list font-weight400">
+                  New
+                </button>
+              </li>
+              <li class="colorGray">01/29/2022</li>
+            </ul>
+          </div>
+
+          <div class="menu__list styleHeight">
+            <ul class="menu__block montserrat-font16">
+              <li class="font-weight400">#567</li>
+              <li class="font-weight500">Button not working</li>
+              <li class="font-weight400">DeNet Pass</li>
+              <li>
+                <button class="button-review button-list font-weight400">
+                  On review
+                </button>
+              </li>
+              <li class="colorGray">01/29/2022</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </section>
   </body>
