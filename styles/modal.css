@@ -17,8 +17,14 @@
   margin: auto;
   padding: 50px 45px 48px 45px;
   max-width: 1186px;
-  height: 639px;
+  min-height: 639px;
   border-radius: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .modal-content {
+    padding: 20px 25px 28px 25px;
+  }
 }
 
 .modal-content > h1 {
@@ -132,16 +138,29 @@
 
 .modal__sendMessage {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 25px;
+}
+
+.modal__formMessage {
+  position: relative;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .modal__formMessage > input {
-  width: 820px;
+  width: 887px;
   height: 44px;
   border: 1px solid #ebebeb;
   border-radius: 10px;
   padding-left: 10px;
-  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .modal__formMessage > input {
+    width: 587px;
+  }
 }
 
 .button__send {

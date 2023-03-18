@@ -39,3 +39,25 @@
   height: 40px;
   border-radius: 10px;
 }
+
+.button__send {
+  width: 66px;
+  height: 44px;
+  background: #ffd600;
+  border-radius: 0px 10px 10px 0px;
+  padding-top: 7px;
+}
+
+.button__delete {
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  width: 58px;
+  height: 44px;
+}
+
+.button__status {
+  border: 1px solid #ffd600;
+  border-radius: 10px;
+  width: 116px;
+  height: 44px;
+}
