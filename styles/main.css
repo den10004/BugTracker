@@ -14,11 +14,8 @@
   cursor: pointer;
 }
 
-.nav-tab {
-  display: inline;
-}
-
 .nav-tab.active {
+  display: inline;
   cursor: pointer;
   border-bottom: 2px solid #ffd600;
   font-weight: 600;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delta</title>
+    <title>Bugs</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="" />
@@ -20,9 +20,11 @@
     <header class="header">
       <a href="/"><img src="./images/LOGO.svg" alt="logo" /></a>
 
-      <div class="header__wrapp">
-        <div class="header__block">
-          <button><img src="./images/Union.png" /></button>
+      <div class="header__wrap">
+        <div class="header__block blockMax">
+          <button class="header__search">
+            <img src="./images/Union.png" />
+          </button>
           <div class="header__selects">
             <div class="select__container">
               <div class="select montserrat-font16 font-weight400">
@@ -55,39 +57,36 @@
       </div>
     </header>
 
-    <header class="header-min">
-      <div class="header-min__logosBlock">
-        <a href="/"><img src="./images/LOGO.svg" alt="logo" /></a>
-        <img class="header__profile" src="./images/Profile.png" alt="profile" />
-      </div>
-
-      <div class="header__block">
-        <button><img src="./images/Union.png" /></button>
-        <div class="header__selects">
-          <div class="select__container">
-            <div class="select">
-              <select>
-                <option value="1">Polygon</option>
-                <option value="2">Polygon1</option>
-              </select>
-            </div>
-          </div>
-          <div class="header__buttonBlock montserrat-font16">
-            <button class="font-weight500 colorGray">
-              Used:&nbsp;<strong class="colorBlock">0.4 GB</strong>
-            </button>
-            <button>
-              <div class="inside-block">
-                <div class="font-weight500 colorGray">
-                  Balance:&nbsp;<strong class="colorBlock">0.6 TBY</strong
-                  ><img src="./images/plus.png" alt="plus" />
-                </div>
-              </div>
-            </button>
+    <div class="header__minBlock blockMin">
+      <button class="header__search"><img src="./images/Union.png" /></button>
+      <div class="header__selects">
+        <div class="select__container">
+          <div class="select montserrat-font16 font-weight400">
+            <select>
+              <option class="montserrat-font16 font-weight400" value="1">
+                Polygon
+              </option>
+              <option class="montserrat-font16 font-weight400" value="2">
+                Polygon1
+              </option>
+            </select>
           </div>
         </div>
+        <div class="header__buttonBlock montserrat-font16">
+          <button class="font-weight500 colorGray">
+            Used:&nbsp;<strong class="colorBlock">0.4 GB</strong>
+          </button>
+          <button>
+            <div class="inside-block">
+              <div class="font-weight500 colorGray is">
+                Balance:&nbsp;<strong class="colorBlock">0.6 TBY</strong
+                ><img src="./images/plus.png" alt="plus" />
+              </div>
+            </div>
+          </button>
+        </div>
       </div>
-    </header>
+    </div>
 
     <section class="wrapper">
       <section class="tabs">
